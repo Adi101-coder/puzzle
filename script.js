@@ -1,18 +1,16 @@
 function checkAnswer() {
     const userInput = document.getElementById("userInput").value.toLowerCase();
-    const correctAnswer = "python"; // You can change this to any answer
+    const correctAnswer = "python"; // Update this if needed
     const result = document.getElementById("result");
 
     if (userInput === correctAnswer) {
-        result.textContent = "✅ Correct! Prices increased by 25%!";
-        result.style.color = "#27ae60"; // green
+        result.textContent = "Prices increased by 25%!";
     } else {
         let randomValue;
         do {
             randomValue = Math.floor(Math.random() * 100) + 1;
-        } while (randomValue === 25); // Make sure it is NOT 25
+        } while (randomValue === 25);
 
-        result.textContent = `❌ Incorrect! ${randomValue}% change in stock price.`;
-        result.style.color = "#c0392b"; // red
+        result.textContent = ` ${randomValue}% change in stock price.`;
     }
 }
