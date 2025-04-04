@@ -1,14 +1,14 @@
 function checkAnswer() {
-    const correctAnswer = "python";
-    const input = document.getElementById("answer").value.trim().toLowerCase();
+    const userInput = document.getElementById("userInput").value.toLowerCase();
+    const correctAnswer = "python"; // change as needed
+
     const result = document.getElementById("result");
-  
-    if (input === correctAnswer) {
-      result.textContent = "✅ Correct! Great job!";
-      result.style.color = "green";
+
+    if (userInput === correctAnswer) {
+        result.textContent = "✅ Correct! Well done!";
+        result.style.color = "#2ecc71"; // green
     } else {
-      result.textContent = "❌ Wrong! Try again.";
-      result.style.color = "red";
+        result.textContent = "❌ Incorrect! Try again.";
+        result.style.color = "#e74c3c"; // red
     }
-  }
-  
+}
