@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Clock Puzzle Quiz</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Puzzle Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🕰️ Clock Puzzle Quiz</h1>
-    <p class="rules">
-      <strong>Rules:</strong><br>
-      - Each of the 6 clocks below represents one letter.<br>
-      - The hand positions hint at the letter's identity.<br>
-      - Guess the 6-letter word related to technology.<br>
-      - Enter your answer below!
-    </p>
+    <div class="container">
+        <h1>⏰ Clock Puzzle Quiz</h1>
 
-    <div class="images">
-      <img src="img1.png" alt="Clock 1" />
-      <img src="img2.png" alt="Clock 2" />
-      <img src="img3.png" alt="Clock 3" />
-      <img src="img4.png" alt="Clock 4" />
-      <img src="img5.png" alt="Clock 5" />
-      <img src="img6.png" alt="Clock 6" />
+        <div class="rules">
+            <h3>📜 Rules & Instructions</h3>
+            <ul>
+                <li>The game consists of **6 clock images**, each representing a letter.</li>
+                <li>Analyze the **positions of the clock hands** carefully—they form a hidden word.</li>
+                <li>Type your guessed word in the input box below.</li>
+                <li>Click the **"Submit Answer"** button to check if your guess is correct.</li>
+                <li>✅ If correct, you’ll see a **success message**!</li>
+                <li>❌ If wrong, try again—you have **unlimited attempts**.</li>
+                <li>🔎 **Hint:** Think about the relation between time and letters!</li>
+                <li>🚀 **Challenge:** Solve it in the fewest attempts possible.</li>
+            </ul>
+        </div>
+
+        <div class="images">
+            <img src="img1.png" alt="Clock 1">
+            <img src="img2.png" alt="Clock 2">
+            <img src="img3.png" alt="Clock 3">
+            <img src="img4.png" alt="Clock 4">
+            <img src="img5.png" alt="Clock 5">
+            <img src="img6.png" alt="Clock 6">
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Enter your answer here">
+            <button onclick="checkAnswer()">Submit Answer</button>
+        </div>
+
+        <p id="result"></p>
     </div>
 
-    <input type="text" id="answer" placeholder="Enter your answer here" maxlength="6"/>
-    <button onclick="checkAnswer()">Submit</button>
-    <p id="result"></p>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
