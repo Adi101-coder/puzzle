@@ -8,7 +8,7 @@ function checkAnswer() {
         result.style.color = "#27ae60"; // green
     } else {
         const randomValue = Math.floor(Math.random() * 100) + 1;
-        result.textContent = `❌ Incorrect! Random value generated: ${randomValue}`;
+        result.textContent = ` ${randomValue}`;
         result.style.color = "#c0392b"; // red
     }
 }
