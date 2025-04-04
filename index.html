@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clock Puzzle Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🕰️ Clock Puzzle Quiz</h1>
+    <p class="rules">
+      <strong>Rules:</strong><br>
+      - Each of the 6 clocks below represents one letter.<br>
+      - The hand positions hint at the letter's identity.<br>
+      - Guess the 6-letter word related to technology.<br>
+      - Enter your answer below!
+    </p>
+
+    <div class="images">
+      <img src="images/img1.png" alt="Clock 1" />
+      <img src="images/img2.png" alt="Clock 2" />
+      <img src="images/img3.png" alt="Clock 3" />
+      <img src="images/img4.png" alt="Clock 4" />
+      <img src="images/img5.png" alt="Clock 5" />
+      <img src="images/img6.png" alt="Clock 6" />
+    </div>
+
+    <input type="text" id="answer" placeholder="Enter your answer here" maxlength="6"/>
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
